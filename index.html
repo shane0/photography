@@ -32,8 +32,16 @@
       <span class="album_title">15mm</span>
     </li>
     <li><a href="2025/">
-      <img src="2025/thumbnails/Library%20-%202%20of%2033.jpeg" class="album_thumb" alt="2025" title="2025" /></a>
+      <img src="2025/thumbnails/Library%20-%201%20of%201.jpeg" class="album_thumb" alt="2025" title="2025" /></a>
       <span class="album_title">2025</span>
+    </li>
+    <li><a href="astrophotography/">
+      <img src="astrophotography/thumbnails/Library%20-%203%20of%206.jpeg" class="album_thumb" alt="astrophotography" title="astrophotography" /></a>
+      <span class="album_title">astrophotography</span>
+    </li>
+    <li><a href="wheels/">
+      <img src="wheels/thumbnails/vehicles%20-%201%20of%2031.jpeg" class="album_thumb" alt="wheels" title="wheels" /></a>
+      <span class="album_title">wheels</span>
     </li>
   </ul>
 </div>
@@ -41,9 +49,58 @@
   <a id="fullscreen"><img src="static/img/fullscreen.png"
                           title="Fullscreen" alt="Fullscreen (f)" /></a>
 </div>
+<div id="gallery"></div>
 
 
 
+    <script src="static/jquery-3.3.1.min.js"></script>
+    <script src="static/galleria.min.js"></script>
+    <script src="static/themes/classic/galleria.classic.min.js"></script>
+    <script src="static/plugins/history/galleria.history.min.js"></script>
+    <script>
+    var data = [
+{
+        title: ".DS_Store",
+        description: "",
+        thumb: "thumbnails/.DS_Store.jpg",
+      },
+    ]
+
+    Galleria.ready(function() {
+        /*
+        load thumbnails after gallery setup, and download has started
+        for the main images, but before the loading of map tiles starts
+        in the background. This ensures visible elements are prioritised
+        over non-visible elements
+
+        The choice to lazy load thumbnails in batches of 50 was not made
+        scientifically. Other numbers may yield better performance.
+        */
+        this.lazyLoadChunks( 50 );
+
+        this.attachKeyboard({
+            right: this.next,
+            left: this.prev,
+            /* Toggle fullscreen display on press of 'f' key */
+            0x46: this.toggleFullscreen,
+        });
+
+        var gallery = this;
+        $('#fullscreen').click(function() {
+          gallery.toggleFullscreen();
+        });
+
+        $('.icons').appendTo(this.$('container'));
+    });
+
+    Galleria.configure({
+autoplay: true,        imageCrop: false,
+        transition: "fade",
+        thumbnails: "lazy"
+    });
+    Galleria.run("#gallery", {dataSource: data});
+
+    </script>
       </div>
 <footer>
   <p>
