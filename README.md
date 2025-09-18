@@ -1,9 +1,13 @@
 # photography
 
+- <https://sigal.saimon.org/en/stable/configuration.html>
+- trying out sigal as a backup or alternative
+
 ## utility
 
-- mover
-- stringmover
+- [ ] later move these to plugins/
+- mover moving files into flat directory
+- stringmover prompt for string move files based on name useful when using albums
 
 ## run locally
 
@@ -22,3 +26,6 @@ sigal serve
 ```sh
 mkdir -p .github/workflows && touch .github/workflows/deploy.yml
 ```
+
+1g limit
+du -h .

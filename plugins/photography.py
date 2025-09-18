@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-""" photography """
+"""photography"""
 
 from cli import (
     BUJO_FOLDER,
@@ -24,8 +24,7 @@ import inspect
 # import datetime
 
 # using inspect to import globals from parent dir module
-current_dir = os.path.dirname(os.path.abspath(
-    inspect.getfile(inspect.currentframe())))
+current_dir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 parent_dir = os.path.dirname(current_dir)
 sys.path.insert(0, parent_dir)
 
@@ -43,3 +42,9 @@ def edit():
     """edit plugin"""
     click.edit(filename=inspect.getfile(inspect.currentframe()), editor="code")
 
+
+# TODO
+# wipe empty dirs
+# prompt string input output dirs move stuff string*.jpeg
+# prompt choose a folder in shane_null
+# recursively move photos to output folder
