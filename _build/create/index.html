@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>create - </title>
+    <meta name="description" content="">
+    <meta name="author" content="shane null">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/themes/classic/galleria.classic.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <style>
+    body::after{
+        position:absolute; width:0; height:0; overflow:hidden; z-index:-1;
+        content:url(Library%20-%201%20of%208.jpeg);
+    }</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="../">shane_null</a></h1>
+
+  <div class="breadcrumb">
+    <h2>
+        <a href=".">create</a></h2>
+  </div>
+        <hr>
+      </header>
+
+      <div id="main" role="main">
+<div class="icons">
+  <a id="fullscreen"><img src="../static/img/fullscreen.png"
+                          title="Fullscreen" alt="Fullscreen (f)" /></a>
+</div>
+<div id="gallery"></div>
+
+
+
+    <script src="../static/jquery-3.3.1.min.js"></script>
+    <script src="../static/galleria.min.js"></script>
+    <script src="../static/themes/classic/galleria.classic.min.js"></script>
+    <script src="../static/plugins/history/galleria.history.min.js"></script>
+    <script>
+    var data = [
+{
+        title: "Library - 1 of 8",
+        description: "<div class='film-meta'><abbr title='exposure'>1/60</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>6</abbr></div><abbr title='camera make and model'>EASTMAN KODAK COMPANY KODAK DX6490 ZOOM DIGITAL CAMERA</abbr><abbr title='date'>Fri Jun 17 11:08:18 2005</abbr>",
+        thumb: "thumbnails/Library%20-%201%20of%208.jpeg",
+        image: "Library%20-%201%20of%208.jpeg"
+      },
+{
+        title: "Library - 2 of 8",
+        description: "<div class='film-meta'><abbr title='exposure'>1/60</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>6</abbr></div><abbr title='camera make and model'>EASTMAN KODAK COMPANY KODAK DX6490 ZOOM DIGITAL CAMERA</abbr><abbr title='date'>Fri Jun 17 11:31:10 2005</abbr>",
+        thumb: "thumbnails/Library%20-%202%20of%208.jpeg",
+        image: "Library%20-%202%20of%208.jpeg"
+      },
+{
+        title: "Library - 3 of 8",
+        description: "<div class='film-meta'><abbr title='film speed'>400</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>1.5</abbr><abbr title='focal length'>6</abbr></div><a title='location' href='https://www.openstreetmap.org/?mlat=47.77211111111111&amp;mlon=-122.35292777777777&amp;zoom=12&amp;layers=M' target='_blank' class='map' >N47.772111W122.352928</a><abbr title='camera make and model'>Apple iPhone 13 Pro Max</abbr><abbr title='date'>Sat Oct  2 19:14:09 2021</abbr>",
+        thumb: "thumbnails/Library%20-%203%20of%208.jpeg",
+        image: "Library%20-%203%20of%208.jpeg"
+      },
+{
+        title: "Library - 4 of 8",
+        description: "<div class='film-meta'><abbr title='film speed'>400</abbr><abbr title='exposure'>1/59</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>9</abbr></div><a title='location' href='https://www.openstreetmap.org/?mlat=47.77192222222222&amp;mlon=-122.35320277777777&amp;zoom=12&amp;layers=M' target='_blank' class='map' >N47.771922W122.353203</a><abbr title='camera make and model'>Apple iPhone 13 Pro Max</abbr><abbr title='date'>Mon Dec 27 19:36:42 2021</abbr>",
+        thumb: "thumbnails/Library%20-%204%20of%208.jpeg",
+        image: "Library%20-%204%20of%208.jpeg"
+      },
+{
+        title: "Library - 5 of 8",
+        description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>1/84</abbr><abbr title='aperture'>2.8</abbr><abbr title='focal length'>9</abbr></div><a title='location' href='https://www.openstreetmap.org/?mlat=47.772166666666664&amp;mlon=-122.35311944444445&amp;zoom=12&amp;layers=M' target='_blank' class='map' >N47.772167W122.353119</a><abbr title='camera make and model'>Apple iPhone 13 Pro Max</abbr><abbr title='date'>Mon Dec 27 20:04:24 2021</abbr>",
+        thumb: "thumbnails/Library%20-%205%20of%208.jpeg",
+        image: "Library%20-%205%20of%208.jpeg"
+      },
+{
+        title: "Library - 6 of 8",
+        description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/111</abbr><abbr title='aperture'>1.5</abbr><abbr title='focal length'>6</abbr></div><a title='location' href='https://www.openstreetmap.org/?mlat=47.77205&amp;mlon=-122.35299722222221&amp;zoom=12&amp;layers=M' target='_blank' class='map' >N47.772050W122.352997</a><abbr title='camera make and model'>Apple iPhone 13 Pro Max</abbr><abbr title='date'>Mon Dec 27 20:32:29 2021</abbr>",
+        thumb: "thumbnails/Library%20-%206%20of%208.jpeg",
+        image: "Library%20-%206%20of%208.jpeg"
+      },
+{
+        title: "Library - 7 of 8",
+        description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>1/59</abbr><abbr title='aperture'>1.5</abbr><abbr title='focal length'>6</abbr></div><a title='location' href='https://www.openstreetmap.org/?mlat=47.77205&amp;mlon=-122.35299722222221&amp;zoom=12&amp;layers=M' target='_blank' class='map' >N47.772050W122.352997</a><abbr title='camera make and model'>Apple iPhone 13 Pro Max</abbr><abbr title='date'>Mon Dec 27 20:45:05 2021</abbr>",
+        thumb: "thumbnails/Library%20-%207%20of%208.jpeg",
+        image: "Library%20-%207%20of%208.jpeg"
+      },
+{
+        title: "Library - 8 of 8",
+        description: "<div class='film-meta'></div><abbr title='date'>Mon Dec 27 20:55:47 2021</abbr>",
+        thumb: "thumbnails/Library%20-%208%20of%208.jpeg",
+        image: "Library%20-%208%20of%208.jpeg"
+      },
+    ]
+
+    Galleria.ready(function() {
+        /*
+        load thumbnails after gallery setup, and download has started
+        for the main images, but before the loading of map tiles starts
+        in the background. This ensures visible elements are prioritised
+        over non-visible elements
+
+        The choice to lazy load thumbnails in batches of 50 was not made
+        scientifically. Other numbers may yield better performance.
+        */
+        this.lazyLoadChunks( 50 );
+
+        this.attachKeyboard({
+            right: this.next,
+            left: this.prev,
+            /* Toggle fullscreen display on press of 'f' key */
+            0x46: this.toggleFullscreen,
+        });
+
+        var gallery = this;
+        $('#fullscreen').click(function() {
+          gallery.toggleFullscreen();
+        });
+
+        $('.icons').appendTo(this.$('container'));
+    });
+
+    Galleria.configure({
+autoplay: true,        imageCrop: false,
+        transition: "fade",
+        thumbnails: "lazy"
+    });
+    Galleria.run("#gallery", {dataSource: data});
+
+    </script>
+      </div>
+<footer>
+  <p>
+      <span>&copy; shane null</span>
+    <span>Generated by <a href="https://github.com/saimn/sigal">sigal</a></span>
+  </p>
+</footer>    </div>
+  </body>
+</html>
