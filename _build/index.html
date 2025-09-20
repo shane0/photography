@@ -85,61 +85,12 @@
   <a id="fullscreen"><img src="static/img/fullscreen.png"
                           title="Fullscreen" alt="Fullscreen (f)" /></a>
 </div>
-<div id="gallery"></div>
 
 
 <div id="description">
   <h1>shane null's photos</h1><p>dont' judge I just recently ot my first camera for my birthday I'm dumping photos here some are not perfect</p>
 </div>
 
-    <script src="static/jquery-3.3.1.min.js"></script>
-    <script src="static/galleria.min.js"></script>
-    <script src="static/themes/classic/galleria.classic.min.js"></script>
-    <script src="static/plugins/history/galleria.history.min.js"></script>
-    <script>
-    var data = [
-{
-        title: ".DS_Store",
-        description: "",
-        thumb: "thumbnails/.DS_Store.jpg",
-      },
-    ]
-
-    Galleria.ready(function() {
-        /*
-        load thumbnails after gallery setup, and download has started
-        for the main images, but before the loading of map tiles starts
-        in the background. This ensures visible elements are prioritised
-        over non-visible elements
-
-        The choice to lazy load thumbnails in batches of 50 was not made
-        scientifically. Other numbers may yield better performance.
-        */
-        this.lazyLoadChunks( 50 );
-
-        this.attachKeyboard({
-            right: this.next,
-            left: this.prev,
-            /* Toggle fullscreen display on press of 'f' key */
-            0x46: this.toggleFullscreen,
-        });
-
-        var gallery = this;
-        $('#fullscreen').click(function() {
-          gallery.toggleFullscreen();
-        });
-
-        $('.icons').appendTo(this.$('container'));
-    });
-
-    Galleria.configure({
-autoplay: true,        imageCrop: false,
-        transition: "fade",
-        thumbnails: "lazy"
-    });
-    Galleria.run("#gallery", {dataSource: data});
-
-    </script>
       </div>
 <footer>
   <p>
