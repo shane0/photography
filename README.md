@@ -29,3 +29,16 @@ mkdir -p .github/workflows && touch .github/workflows/deploy.yml
 
 1g limit
 du -h .
+
+## garbage
+
+```sh
+# echo .DS_Store >> .gitignore
+# git rm -r --cached .DS_Store
+
+find ~ -name .DS_Store -delete
+find . -name .DS_Store -delete
+
+# git config --global core.excludesfile ~/.gitignore_global
+# echo .DS_Store >> ~/.gitignore_global
+```
