@@ -1,0 +1,31 @@
+{% extends "base.html" %} {% block extra_head %} {# We will always want to show
+the first image when we're on an album page #} {# Start loading now for faster
+document complete instead of waiting for js to load it #}
+<style>
+  body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url({{ album.medias[0].url }});
+  }
+</style>
+{% endblock %} {% block content %} {% include 'album_items.html' %} {% endblock
+%}
+<script
+  src="https://giscus.app/client.js"
+  data-repo="shane0/photography"
+  data-repo-id="R_kgDOPxHnXw"
+  data-category="General"
+  data-category-id="DIC_kwDOPxHnX84CvtDP"
+  data-mapping="url"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="noborder_dark"
+  data-lang="en"
+  crossorigin="anonymous"
+  async
+></script>

@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block extra_head %} {# These are used on album
+pages - prefetch now #}
+<link rel="prefetch" href="static/jquery-3.3.1.min.js" />
+<link rel="prefetch" href="static/galleria.min.js" />
+<link rel="prefetch" href="static/themes/classic/galleria.classic.min.js" />
+<link rel="prefetch" href="static/plugins/history/galleria.history.min.js" />
+{% endblock %} {% block content %}
+<div id="albums">
+  <ul>
+    {% for alb in album.albums %}
+    <li>
+      <a href="{{ alb.url }}">
+        <img
+          src="{{ alb.thumbnail }}"
+          class="album_thumb"
+          alt="{{ alb.name }}"
+          title="{{ alb.name }}"
+      /></a>
+      <span class="album_title">{{ alb.title }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{% include 'album_items.html' %}
+<script
+  src="https://giscus.app/client.js"
+  data-repo="shane0/photography"
+  data-repo-id="R_kgDOPxHnXw"
+  data-category="General"
+  data-category-id="DIC_kwDOPxHnX84CvtDP"
+  data-mapping="url"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="noborder_dark"
+  data-lang="en"
+  crossorigin="anonymous"
+  async
+></script>
+
+{% endblock %}
