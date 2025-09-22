@@ -28,7 +28,12 @@ theme = "./theme_galleria_giscus/"
 
 
 # Theme for galleria (https://galleriajs.github.io/themes/)
-galleria_theme = "twelve"
+# galleria_theme = "miniml"
+# galleria_theme = "classic"
+# galleria_theme = "fullscreen"
+# galleria_theme = "twelve"
+# galleria_theme = "azur"
+galleria_theme = "folio"
 
 # Author. Used in the footer of the pages and in the author meta tag.
 author = "shane null"
@@ -87,7 +92,7 @@ img_size = (800, 600)
 # autorotate_images = True
 
 # If True, EXIF data from the original image is copied to the resized image
-# copy_exif_data = False
+copy_exif_data = True
 
 # Python's datetime format string used for the EXIF date formatting
 # https://docs.python.org/3/library/datetime.html#strftime-strptime-behavior
@@ -160,7 +165,7 @@ thumb_size = (280, 210)
 # Attribute of Media objects which is used to sort medias. 'date' can be used
 # to sort with EXIF dates, and 'meta.key' to sort on a metadata key (which then
 # must exist for all images).
-# medias_sort_attr = 'filename'
+medias_sort_attr = "filename"
 
 # Reverse sort for medias
 # medias_sort_reverse = False
