@@ -1,3 +1,3 @@
 # max my son
 
-- he's going to berklee # max my son school of music currently
+- max is going to berklee school of music
