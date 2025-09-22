@@ -12,15 +12,6 @@
     <link rel="stylesheet" href="../static/css/normalize.css">
     <link rel="stylesheet" href="../static/themes/folio/galleria.folio.css">
     <link rel="stylesheet" href="../static/css/style.css">
-  <link rel="stylesheet" href="../static/leaflet/leaflet.css" />
-  <link rel="stylesheet" href="../static/leaflet/Control.FullScreen.css" />
-  <link rel="stylesheet" href="../static/leaflet/MarkerCluster.css" />
-  <link rel="stylesheet" href="../static/leaflet/Leaflet.Photo.css" />
-  <script src="../static/leaflet/leaflet.js"></script>
-  <script src="../static/leaflet/leaflet-providers.js"></script>
-  <script src="../static/leaflet/Control.FullScreen.js"></script>
-  <script src="../static/leaflet/leaflet.markercluster.js"></script>
-  <script src="../static/leaflet/Leaflet.Photo.js"></script>
   <style>
   body::after {
     position: absolute;
@@ -53,105 +44,6 @@
       alt="Fullscreen (f)"
   /></a>
 </div>
-<div id="mapid" style="height: 500px;"></div>
-<script charset="utf-8">
-  var map = L.map('mapid', {
-    fullscreenControl: true,
-    fullscreenControlOptions: {
-      position: 'topleft'
-    }
-  });
-  L.tileLayer.provider('OpenStreetMap.Mapnik').addTo(map);
-
-  var photoLayer = L.photo.cluster({ spiderfyDistanceMultiplier: 1.2 })
-                   .on('click', function (evt) {
-    evt.layer.bindPopup(L.Util.template('<img src="{url}"/></a><p>{caption}</p>', evt.layer.photo), {
-      className: 'leaflet-popup-photo',
-      minWidth: 400
-    }).openPopup();
-  });
-
-  var photos = [];
-    photos.push({
-      lat: 45.51889166666667,
-      lng: -122.6639638888889,
-      url: "thumbnails/Library%20-%202%20of%2033.jpeg",
-      caption: "Library - 2 of 33",
-      thumbnail: "thumbnails/Library%20-%202%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 45.51884722222222,
-      lng: -122.66406388888889,
-      url: "thumbnails/Library%20-%203%20of%2033.jpeg",
-      caption: "Library - 3 of 33",
-      thumbnail: "thumbnails/Library%20-%203%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 45.518902777777775,
-      lng: -122.66401666666667,
-      url: "thumbnails/Library%20-%204%20of%2033.jpeg",
-      caption: "Library - 4 of 33",
-      thumbnail: "thumbnails/Library%20-%204%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 45.51888611111111,
-      lng: -122.66403333333334,
-      url: "thumbnails/Library%20-%205%20of%2033.jpeg",
-      caption: "Library - 5 of 33",
-      thumbnail: "thumbnails/Library%20-%205%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 45.518902777777775,
-      lng: -122.66397777777779,
-      url: "thumbnails/Library%20-%206%20of%2033.jpeg",
-      caption: "Library - 6 of 33",
-      thumbnail: "thumbnails/Library%20-%206%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 45.51889166666667,
-      lng: -122.6641,
-      url: "thumbnails/Library%20-%207%20of%2033.jpeg",
-      caption: "Library - 7 of 33",
-      thumbnail: "thumbnails/Library%20-%207%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 46.19110833333333,
-      lng: -123.83373888888889,
-      url: "thumbnails/Library%20-%208%20of%2033.jpeg",
-      caption: "Library - 8 of 33",
-      thumbnail: "thumbnails/Library%20-%208%20of%2033.jpeg",
-    });
-    photos.push({
-      lat: 48.070575000000005,
-      lng: -121.65357222222222,
-      url: "thumbnails/Recently%20Saved%20-%201%20of%206.jpeg",
-      caption: "Recently Saved - 1 of 6",
-      thumbnail: "thumbnails/Recently%20Saved%20-%201%20of%206.jpeg",
-    });
-    photos.push({
-      lat: 45.10482777777778,
-      lng: -121.75354722222222,
-      url: "thumbnails/Recently%20Saved%20-%204%20of%206.jpeg",
-      caption: "Recently Saved - 4 of 6",
-      thumbnail: "thumbnails/Recently%20Saved%20-%204%20of%206.jpeg",
-    });
-    photos.push({
-      lat: 47.77204444444445,
-      lng: -122.35292777777777,
-      url: "thumbnails/Recently%20Saved%20-%205%20of%206.jpeg",
-      caption: "Recently Saved - 5 of 6",
-      thumbnail: "thumbnails/Recently%20Saved%20-%205%20of%206.jpeg",
-    });
-    photos.push({
-      lat: 47.772075,
-      lng: -122.35305833333332,
-      url: "thumbnails/Recently%20Saved%20-%206%20of%206.jpeg",
-      caption: "Recently Saved - 6 of 6",
-      thumbnail: "thumbnails/Recently%20Saved%20-%206%20of%206.jpeg",
-    });
-  photoLayer.add(photos).addTo(map);
-  map.fitBounds(photoLayer.getBounds());
-</script>
  <div id="gallery"></div>
   <div id="description"><h1>2025</h1><ul><li>2025 was full of adventures</li><li>bicycled the pacific coast astoria to san diego</li><li>hiked oregon section g with my son max</li><li>amtrak to iowa for my uncle russel's funeral :(</li><li>amtrak to iowa with my bike friday bicycle for my parents' 40th anniversary :)</li></ul></div>
   <script src="../static/jquery-3.3.1.min.js"></script>
