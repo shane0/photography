@@ -70,8 +70,8 @@ img_size = (800, 600)
 # This option only has an effect on the galleria theme for the while.
 # The leaflet_provider setting allow to customize the tile provider (see
 # https://github.com/leaflet-extras/leaflet-providers#providers)
-show_map = True
-# show_map = False
+# show_map = True
+show_map = False
 # leaflet_provider = 'OpenStreetMap.Mapnik'
 # map_height = '500px'
 
