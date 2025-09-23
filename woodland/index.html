@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>woodland - </title>
+    <meta name="description" content="">
+    <meta name="author" content="shane null">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" href="../static/css/normalize.css">
+    <link rel="stylesheet" href="../static/themes/folio/galleria.folio.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+  <style>
+  body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(Library%20-%201%20of%2012.jpeg);
+  }
+</style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1><a href="../">shane_null</a></h1>
+
+  <div class="breadcrumb">
+    <h2>
+        <a href=".">woodland</a></h2>
+  </div>
+        <hr>
+      </header>
+
+      <div id="main" role="main">
+ <div class="icons">
+  <a id="fullscreen"
+    ><img
+      src="../static/img/fullscreen.png"
+      title="Fullscreen"
+      alt="Fullscreen (f)"
+  /></a>
+</div>
+ <div id="gallery"></div>
+    <script src="../static/jquery-3.3.1.min.js"></script>
+<script src="../static/galleria.min.js"></script>
+<script src="../static/themes/folio/galleria.folio.min.js"></script>
+<script src="../static/plugins/history/galleria.history.min.js"></script>
+<script>
+  var data = [
+{
+      title: "Library - 1 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>27962/44739201</abbr><abbr title='aperture'>6.300000190736682</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:01:04 2025</abbr>",
+      thumb: "thumbnails/Library%20-%201%20of%2012.jpeg",
+      image: "Library%20-%201%20of%2012.jpeg"
+    },
+{
+      title: "Library - 2 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/500</abbr><abbr title='aperture'>9.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:01:53 2025</abbr>",
+      thumb: "thumbnails/Library%20-%202%20of%2012.jpeg",
+      image: "Library%20-%202%20of%2012.jpeg"
+    },
+{
+      title: "Library - 3 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>14.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:03:29 2025</abbr>",
+      thumb: "thumbnails/Library%20-%203%20of%2012.jpeg",
+      image: "Library%20-%203%20of%2012.jpeg"
+    },
+{
+      title: "Library - 4 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/250</abbr><abbr title='aperture'>14.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:03:41 2025</abbr>",
+      thumb: "thumbnails/Library%20-%204%20of%2012.jpeg",
+      image: "Library%20-%204%20of%2012.jpeg"
+    },
+{
+      title: "Library - 5 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/500</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:04:48 2025</abbr>",
+      thumb: "thumbnails/Library%20-%205%20of%2012.jpeg",
+      image: "Library%20-%205%20of%2012.jpeg"
+    },
+{
+      title: "Library - 8 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/1000</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:05:53 2025</abbr>",
+      thumb: "thumbnails/Library%20-%208%20of%2012.jpeg",
+      image: "Library%20-%208%20of%2012.jpeg"
+    },
+{
+      title: "Library - 9 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/2000</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:06:20 2025</abbr>",
+      thumb: "thumbnails/Library%20-%209%20of%2012.jpeg",
+      image: "Library%20-%209%20of%2012.jpeg"
+    },
+{
+      title: "Library - 10 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:07:04 2025</abbr>",
+      thumb: "thumbnails/Library%20-%2010%20of%2012.jpeg",
+      image: "Library%20-%2010%20of%2012.jpeg"
+    },
+{
+      title: "Library - 11 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:07:18 2025</abbr>",
+      thumb: "thumbnails/Library%20-%2011%20of%2012.jpeg",
+      image: "Library%20-%2011%20of%2012.jpeg"
+    },
+{
+      title: "Library - 12 of 12",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>13981/44739201</abbr><abbr title='aperture'>2.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:07:26 2025</abbr>",
+      thumb: "thumbnails/Library%20-%2012%20of%2012.jpeg",
+      image: "Library%20-%2012%20of%2012.jpeg"
+    },
+{
+      title: "Recently Saved - 1 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>27962/44739201</abbr><abbr title='aperture'>6.300000190736682</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:01:04 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%201%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%201%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 2 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/500</abbr><abbr title='aperture'>9.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:01:53 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%202%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%202%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 3 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>14.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:03:29 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%203%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%203%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 4 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/250</abbr><abbr title='aperture'>14.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:03:41 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%204%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%204%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 5 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/500</abbr><abbr title='aperture'>3.5</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:04:48 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%205%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%205%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 6 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/200</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:05:09 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%206%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%206%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 7 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>31666/39582501</abbr><abbr title='aperture'>2.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:05:18 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%207%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%207%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 8 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/1000</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:05:53 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%208%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%208%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 9 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/2000</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:06:20 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%209%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%209%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 10 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>200</abbr><abbr title='exposure'>1/30</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:07:04 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2010%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2010%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 11 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/400</abbr><abbr title='aperture'>5.6</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 14:07:18 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2011%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2011%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 12 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>15</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 15:17:48 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2012%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2012%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 13 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>100</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>5.0</abbr><abbr title='focal length'>15</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 15:17:53 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2013%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2013%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 14 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/50</abbr><abbr title='aperture'>11.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:37:39 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2014%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2014%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 15 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>11.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:38:19 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2015%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2015%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 16 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/250</abbr><abbr title='aperture'>6.300000190736682</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:39:37 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2016%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2016%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 17 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>16.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:45:07 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2017%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2017%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 18 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/250</abbr><abbr title='aperture'>16.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:45:09 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2018%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2018%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 19 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/60</abbr><abbr title='aperture'>16.0</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:45:54 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2019%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2019%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 20 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/160</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:47:54 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2020%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2020%20of%2021.jpeg"
+    },
+{
+      title: "Recently Saved - 21 of 21",
+      description: "<div class='film-meta'><abbr title='film speed'>125</abbr><abbr title='exposure'>1/1000</abbr><abbr title='aperture'>7.1</abbr><abbr title='focal length'>35</abbr></div><abbr title='camera make and model'>NIKON CORPORATION NIKON Z fc</abbr><abbr title='date'>Mon Sep 22 17:48:05 2025</abbr>",
+      thumb: "thumbnails/Recently%20Saved%20-%2021%20of%2021.jpeg",
+      image: "Recently%20Saved%20-%2021%20of%2021.jpeg"
+    },
+  ]
+
+  Galleria.ready(function() {
+      /*
+      load thumbnails after gallery setup, and download has started
+      for the main images, but before the loading of map tiles starts
+      in the background. This ensures visible elements are prioritised
+      over non-visible elements
+
+      The choice to lazy load thumbnails in batches of 50 was not made
+      scientifically. Other numbers may yield better performance.
+      */
+      this.lazyLoadChunks( 50 );
+
+      this.attachKeyboard({
+          right: this.next,
+          left: this.prev,
+          /* Toggle fullscreen display on press of 'f' key */
+          0x46: this.toggleFullscreen,
+      });
+
+      var gallery = this;
+      $('#fullscreen').click(function() {
+        gallery.toggleFullscreen();
+      });
+
+      $('.icons').appendTo(this.$('container'));
+  });
+
+  Galleria.configure({
+      imageCrop: false,
+      transition: "fade",
+      thumbnails: "lazy"
+  });
+  Galleria.run("#gallery", {dataSource: data});
+</script>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="shane0/photography"
+  data-repo-id="R_kgDOP0S8rQ"
+  data-category="General"
+  data-category-id="DIC_kwDOP0S8rc4CvutE"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="noborder_dark"
+  data-lang="en"
+  crossorigin="anonymous"
+  async
+></script>
+
+        </div>
+<footer>
+  <p>
+      <span>&copy; shane null</span>
+    <span>Generated by <a href="https://github.com/saimn/sigal">sigal</a></span>
+  </p>
+</footer>    </div>
+  </body>
+</html>
