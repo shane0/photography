@@ -1,4 +1,4 @@
-# Voigtlander 15mm f4.5 Super-Wide Heliar for Nikon Z
+# Voigtländer 15mm f4.5 Super-Wide Heliar for Nikon Z
 
 - most of these are the voigtlander 15mm
 - this was my first voigtlander
