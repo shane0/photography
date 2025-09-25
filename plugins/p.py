@@ -72,6 +72,13 @@ def f():
 
 
 @cli.command()
+def c():
+    """clean ignore folder"""
+    cmd = "rm -rf ignore/*"
+    os.system(cmd)
+
+
+@cli.command()
 def b():
     """build serve"""
     click.launch("http://127.0.0.1:8000/")
